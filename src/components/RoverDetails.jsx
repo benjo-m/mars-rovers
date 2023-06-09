@@ -1,4 +1,5 @@
 import styles from "../styles/RoverDetails.module.css"
+
 function RoverDetails({ rover }) {
   let cams = []
   console.log(rover)
@@ -9,7 +10,7 @@ function RoverDetails({ rover }) {
   return (
     <div className={styles.container}>
       <img
-        src={`src/assets/rovers/${rover.name}.png`}
+        src={`public/${rover.name}.png`}
         alt="rover-image"
         className={styles.roverImage}
       />

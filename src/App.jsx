@@ -4,6 +4,8 @@ import styles from "./styles/App.module.css"
 import Gallery from "./components/Gallery"
 import RoverDetails from "./components/RoverDetails"
 
+const API_KEY = import.meta.env.VITE_API_KEY
+
 export default function App() {
   const [selectedRover, setSelectedRover] = useState({})
   const [selectedCamera, setSelectedCamera] = useState("")
@@ -16,7 +18,7 @@ export default function App() {
   function getRover(e) {
     let roverName = e.target.value
     console.log(roverName)
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/?&api_key=hfqj9y6dOeDFjyB1SmR5WmcDmj990QFMHpwen844`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/?&api_key=${API_KEY}`
     fetch(url)
       .then((res) => res.json())
       .then((data) => setSelectedRover(data.rover))
@@ -29,12 +31,12 @@ export default function App() {
             selectedRover.name
           }/photos?earth_date=${
             selectedDate == "" ? selectedRover.landing_date : selectedDate
-          }&page=${page}&api_key=hfqj9y6dOeDFjyB1SmR5WmcDmj990QFMHpwen844`
+          }&page=${page}&api_key=${API_KEY}`
         : `https://api.nasa.gov/mars-photos/api/v1/rovers/${
             selectedRover.name
           }/photos?earth_date=${
             selectedDate == "" ? selectedRover.landing_date : selectedDate
-          }&camera=${selectedCamera}&page=${page}&api_key=hfqj9y6dOeDFjyB1SmR5WmcDmj990QFMHpwen844`
+          }&camera=${selectedCamera}&page=${page}&api_key=${API_KEY}`
 
     fetch(url)
       .then((res) => res.json())
