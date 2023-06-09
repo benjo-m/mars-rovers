@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.photo {
+    width: 25%;
+    margin: 20px;
+    border: 1px solid #8999b6;
+    border-radius: 10px;
+}
+
+.buttons {
+    margin: 35px 30px;
+    padding: 5px 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+    background-color: rgb(237, 240, 241);
+    font-weight: bold;
+}
+
+.btnDiv {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.message {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 32px;
+}

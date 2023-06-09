@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.roverImage {
+    width: 45%;
+    border: 2px solid #8999b6;
+    border-radius: 10px;
+}
+
+.roverInfo {
+    width: 50%;
+}
+
+.infoTitle {
+    margin-top: 10px;
+    font-size: large;
+}

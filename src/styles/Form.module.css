@@ -1,0 +1,72 @@
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+
+.inputField {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cameraPicker {
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: large;
+    transition: 250ms;
+    border: none;
+
+}
+
+.cameraPicker:hover {
+    transition: 250ms;
+    background-color: aliceblue;
+}
+
+.datePicker {
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: large;
+    transition: 250ms;
+    border: none;
+}
+
+.datePicker:hover {
+    transition: 250ms;
+    background-color: aliceblue;
+}
+
+.getBtn {
+    transition: 250ms;
+    margin-top: 30px;
+    height: 100%;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0b3d91;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    color: white;
+
+}
+
+.getBtn:hover {
+    transition: 250ms;
+    background-color: #597ec0;
+}
+
+.getBtn:disabled {
+    background-color: #597ec0;
+    cursor: default;
+}
+
