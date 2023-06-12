@@ -89,7 +89,7 @@ export default function App() {
           <h1>Start by selecting a rover</h1>
           <p>
             You if you leave date field as empty, you will see all the photos
-            that selected rover has taken on the first day of its mission{" "}
+            that selected rover has taken on the first day of its mission
           </p>
         </div>
       ) : detailsFlag ? (

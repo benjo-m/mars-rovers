@@ -10,7 +10,7 @@ function RoverDetails({ rover }) {
   return (
     <div className={styles.container}>
       <img
-        src={`/${rover.name.toLowerCase()}.png`}
+        src={`/${rover.name}.png`}
         alt="rover-image"
         className={styles.roverImage}
       />
